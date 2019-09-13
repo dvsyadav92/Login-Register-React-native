@@ -29,7 +29,7 @@ class RegistrationScreen extends Component {
         mobile: '',
         email: '',
         locality: '',
-        language : 'Java',
+        language: 'Java',
         selectedService: 'India',
         serviceItems: ['India', 'US', 'Lanka', 'Nepal', 'Bhutna', 'England']
     }
@@ -56,19 +56,21 @@ class RegistrationScreen extends Component {
                     <TextInput style={{ height: 40, borderColor: 'gray', borderWidth: .5, marginTop: 20 }}
                         placeholder="Locatlity" underlineColorAndroid='transparent'
                         onChangeText={(text) => this.localityTextChnage(text)} />
+                    <View>
+                        <Text>Pick a Language</Text>
+                        <Picker
+                            selectedValue={this.state.selectedService}
+                            onValueChange={(service) => (this.setState({ selectedService: service }))} >
 
+                            <Picker.Item label="JAVA" value="JAVA" />
+                            <Picker.Item label="C" value="C" />
+                            <Picker.Item label="C++" value="C++" />
+                        </Picker>
+                    </View>
                     <TouchableOpacity onPress={() => this.submitPressButton()} style={{ height: 40, marginTop: 10, backgroundColor: '#2E8B57' }}>
                         <Text style={{ color: 'white', textAlign: 'center', marginTop: 10, fontWeight: 'bold' }}>Submit</Text>
                     </TouchableOpacity>
-                    <View>
-                        <Text>Pick a country</Text>
-                        <Picker
-                             selectedValue={this.state.selectedService}
-                             onValueChange={ (service) => ( this.setState({selectedService:service}) ) } >
-         
-                             {this.state.serviceItems}
-                        </Picker>
-                    </View>
+
                 </View>
             </View>
         );
