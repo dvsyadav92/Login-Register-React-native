@@ -15,6 +15,8 @@ import com.examples1.R;
 
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
 // realm
 import io.realm.react.RealmReactPackage;
 
@@ -51,6 +53,7 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(),
       new RNGestureHandlerPackage(),
+      new VectorIconsPackage(),
       new RealmReactPackage()
     ));
   }

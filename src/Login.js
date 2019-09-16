@@ -3,6 +3,7 @@ import RegistrationScreen from './RegistrationScreen'
 import HomeScreen from './HomeScreen'
 import Detail from './DetailScreen'
 import UiExamplesScreen from './UiExamples'
+import NativeCodeCalling from './NativeCodeCalling'
 import TabContainer from './tbs/TabContainer'
 // import { Ionicons } from '@expo/vector-icons'; 
 import { createStackNavigator, createAppContainer ,DrawerNavigator,createDrawerNavigator} from "react-navigation";
@@ -65,6 +66,9 @@ import {
              <TouchableOpacity  onPress={()=>this.tabExampleClick()} style={styles.btnStyle}>
               <Text style={{textAlign: 'center',margin : 10}}>TAB Example</Text>
             </TouchableOpacity>
+            <TouchableOpacity  onPress={()=>this.nativeCodeCallingeClick()} style={styles.btnStyle}>
+              <Text style={{textAlign: 'center',margin : 10}}>Call native code</Text>
+            </TouchableOpacity>
             </View>
        </View>
         );
@@ -72,6 +76,10 @@ import {
 
     UiExampleClick(){
       this.props.navigation.navigate("UiExample")
+    }
+
+    nativeCodeCallingeClick(){
+      this.props.navigation.navigate("NativeCodeCalling")
     }
 
    tabExampleClick(){
@@ -128,7 +136,8 @@ import {
     HomeScreen:{screen:HomeScreen},
     Details:{screen:Detail},
     UiExample:{screen : UiExamplesScreen},
-    TabContainer : {screen : TabContainer}
+    TabContainer : {screen : TabContainer},
+    NativeCodeCalling : {screen : NativeCodeCalling}
   });
 
 

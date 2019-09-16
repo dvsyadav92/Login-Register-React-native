@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import Ionicons from 'react-native-ionicons'
+// import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 
 class HomeScreen extends React.Component {
@@ -81,22 +82,57 @@ const getTabBarIcon = (navigation, focused, tintColor) => {
 
 
 const TabNavigator = createBottomTabNavigator({
-  Home: { screen: HomeScreen },
-  Settings: { screen: SettingsScreen },
-  Settings1: { screen: SettingsScreen },
-  Settings2: { screen: SettingsScreen },
-  Settings3: { screen: SettingsScreen },
-},{
-  defaultNavigationOptions: ({ navigation }) => ({
-    tabBarIcon: ({ focused, tintColor }) =>
-    // alert(" "+focused)
-      getTabBarIcon(navigation, focused, tintColor)
-  }),
-  tabBarOptions: {
-    activeTintColor: 'tomato',
-    inactiveTintColor: 'gray',
+  Home: {
+    screen: HomeScreen,
+    navigationOptions:{
+      tabBarLabel: 'Home',
+      tabBarIcon: ({ tintColor }) => (
+        <Ionicons name='md-home' color={tintColor} size={25} />
+      )
+    }
   },
-}
+  Settings: {
+    screen: SettingsScreen,
+    navigationOptions:{
+      tabBarLabel: 'Settings',
+      tabBarIcon: ({ tintColor }) => (
+        <Ionicons name='md-settings' color={tintColor} size={25} />
+      )
+    }
+    },
+  Settings1: {
+    screen: SettingsScreen,
+    navigationOptions: {
+      tabBarLabel: 'Play',
+      tabBarIcon: ({ tintColor }) => (
+        <Ionicons name='md-play' color={tintColor} size={25} />
+      )
+    }
+  },
+  Settings2: {
+    screen: SettingsScreen,
+    navigationOptions: {
+      tabBarLabel: 'Scan',
+      tabBarIcon: ({ tintColor }) => (
+        <Ionicons name='md-qr-scanner' color={tintColor} size={25} />
+      )
+    }
+  },
+  Settings3: {
+    screen: SettingsScreen,
+    navigationOptions:{
+      tabBarLabel: 'Order',
+      tabBarIcon: ({ tintColor }) => (
+        <Ionicons name='md-reorder' color={tintColor} size={25} />
+      )
+    } 
+  },
+}, {
+    tabBarOptions: {
+      activeTintColor: 'tomato',
+      inactiveTintColor: 'gray',
+    },
+  }
 );
 
 export default createAppContainer(TabNavigator);

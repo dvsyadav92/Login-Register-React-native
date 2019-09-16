@@ -5,6 +5,7 @@ INJECTED from /home/digvijay/ReactnativeApp/Login-Register-React-native/android/
 INJECTED from /home/digvijay/ReactnativeApp/Login-Register-React-native/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /home/digvijay/ReactnativeApp/Login-Register-React-native/android/app/src/main/AndroidManifest.xml:1:1-26:12
 MERGED from /home/digvijay/ReactnativeApp/Login-Register-React-native/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-vector-icons] /home/digvijay/ReactnativeApp/Login-Register-React-native/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:realm] /home/digvijay/ReactnativeApp/Login-Register-React-native/node_modules/realm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] /home/digvijay/ReactnativeApp/Login-Register-React-native/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.60.5] /root/.gradle/caches/transforms-2/files-2.1/b6747eddfeb667797d21c9e14a70357b/AndroidManifest.xml:2:1-13:12
@@ -136,6 +137,8 @@ uses-sdk
 INJECTED from /home/digvijay/ReactnativeApp/Login-Register-React-native/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/digvijay/ReactnativeApp/Login-Register-React-native/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/digvijay/ReactnativeApp/Login-Register-React-native/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-vector-icons] /home/digvijay/ReactnativeApp/Login-Register-React-native/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/digvijay/ReactnativeApp/Login-Register-React-native/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:realm] /home/digvijay/ReactnativeApp/Login-Register-React-native/node_modules/realm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:realm] /home/digvijay/ReactnativeApp/Login-Register-React-native/node_modules/realm/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /home/digvijay/ReactnativeApp/Login-Register-React-native/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
